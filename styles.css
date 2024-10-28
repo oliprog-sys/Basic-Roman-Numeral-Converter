@@ -1,0 +1,91 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-gray: #114a44;
+    --white: #ffffff;
+    --blue: #4859ca;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
+    monospace;
+    font-size: 1.125rem;
+    color: var(--white);
+    background-color: var(--dark-gray);
+    padding: 0 4px;    
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.input-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: clamp(320px, 50vw, 460px);
+    margin: 10px auto;
+}
+
+.input-sec label {
+    white-space: nowrap;
+    word-spacing: -6px;
+    font-size: 2.13rem;
+}
+
+.main-div {
+    margin: 100px 0;
+    border: var(--white);
+    border-width: 4px;
+}
+
+.convert-btn {
+    font-size: 24px;
+    font-family: inherit;
+    background-color: var(--blue);
+    width: 70%;
+    height: 2rem;
+    padding: 0 6px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.number {
+    font-size: inherit;
+    padding: 0.3rem;
+    width: 70%;
+}
+
+.output-sec {
+    margin-inline: auto;
+    width: clamp(320px, 50vw, 460px);
+}
+
+#output {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    text-align: center;
+    min-height: 80px;
+    margin-block-start: 20px;
+    padding: 15px;
+    border: 2px solid var(--orange);
+    border-radius: 2px;
+}
