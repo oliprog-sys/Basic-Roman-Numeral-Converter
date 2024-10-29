@@ -10,6 +10,7 @@
     --dark-gray: #114a44;
     --white: #ffffff;
     --blue: #4859ca;
+    --orange: #d4e22c;
 }
 
 body {
@@ -28,6 +29,8 @@ h1 {
     font-size: 3rem;
     text-align: center;
     margin: 20px 0;
+    margin-bottom: 100px;
+    margin-top: 0;
 }
 
 .input-sec {
@@ -67,14 +70,14 @@ h1 {
 }
 
 .number {
-    font-size: inherit;
+    font-size: 17px;
     padding: 0.3rem;
-    width: 70%;
+    width: 300px;
 }
 
 .output-sec {
     margin-inline: auto;
-    width: clamp(320px, 50vw, 460px);
+    width: clamp(320px, 50vw, 460px);    
 }
 
 #output {
@@ -89,3 +92,18 @@ h1 {
     border: 2px solid var(--orange);
     border-radius: 2px;
 }
+
+@media screen and (min-width: 36em) {
+    body {
+      font-size: 1rem;
+    }
+  
+    .input-sec {
+      flex-direction: row;
+      width: unset;
+    }
+  
+    .output {
+      width: unset;
+    }
+  }
